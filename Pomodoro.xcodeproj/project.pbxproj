@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D259C2C11BEAFBAD00794F54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D259C2C01BEAFBAD00794F54 /* main.m */; };
-		D259C2C41BEAFBAD00794F54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D259C2C31BEAFBAD00794F54 /* AppDelegate.m */; };
-		D259C2C71BEAFBAD00794F54 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D259C2C61BEAFBAD00794F54 /* ViewController.m */; };
+		09CE7D63A5D3D54BA9B3F2B8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3539DA53E397647189DF35CA /* libPods.a */; };
 		D259C2CA1BEAFBAD00794F54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D259C2C81BEAFBAD00794F54 /* Main.storyboard */; };
 		D259C2CC1BEAFBAD00794F54 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D259C2CB1BEAFBAD00794F54 /* Images.xcassets */; };
 		D259C2CF1BEAFBAD00794F54 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D259C2CD1BEAFBAD00794F54 /* LaunchScreen.xib */; };
 		D259C2DB1BEAFBAD00794F54 /* PomodoroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D259C2DA1BEAFBAD00794F54 /* PomodoroTests.m */; };
+		D259C2F21BEB4CC700794F54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D259C2EF1BEB4CC700794F54 /* AppDelegate.m */; };
+		D259C2F41BEB4CC700794F54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D259C2F11BEB4CC700794F54 /* main.m */; };
+		D259C2FD1BEB4D6300794F54 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D259C2FC1BEB4D6300794F54 /* HomeViewController.m */; };
+		D259C3001BEB4DB300794F54 /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D259C2FF1BEB4DB300794F54 /* LeftMenuViewController.m */; };
+		D259C3081BEB587B00794F54 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D259C3071BEB587B00794F54 /* RootViewController.m */; };
+		D259C30F1BEB734900794F54 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D259C30E1BEB734900794F54 /* Info.plist */; };
+		D259C3141BEB755600794F54 /* TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D259C3131BEB755600794F54 /* TargetViewController.m */; };
+		D259C3181BEBB92400794F54 /* LeftMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D259C3171BEBB92400794F54 /* LeftMenuTableViewCell.m */; };
+		D29AA9221BEC972C00A1BF73 /* TimeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D29AA9211BEC972C00A1BF73 /* TimeManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +34,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3539DA53E397647189DF35CA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		897933474A3B71545E4C0C0B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D259C2BB1BEAFBAD00794F54 /* Pomodoro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pomodoro.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D259C2BF1BEAFBAD00794F54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D259C2C01BEAFBAD00794F54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D259C2C21BEAFBAD00794F54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D259C2C31BEAFBAD00794F54 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D259C2C51BEAFBAD00794F54 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D259C2C61BEAFBAD00794F54 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D259C2C91BEAFBAD00794F54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D259C2CB1BEAFBAD00794F54 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D259C2CE1BEAFBAD00794F54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D259C2D41BEAFBAD00794F54 /* PomodoroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PomodoroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D259C2D91BEAFBAD00794F54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D259C2DA1BEAFBAD00794F54 /* PomodoroTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PomodoroTests.m; sourceTree = "<group>"; };
+		D259C2EE1BEB4CC700794F54 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D259C2EF1BEB4CC700794F54 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D259C2F11BEB4CC700794F54 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D259C2FB1BEB4D6300794F54 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		D259C2FC1BEB4D6300794F54 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		D259C2FE1BEB4DB300794F54 /* LeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuViewController.h; sourceTree = "<group>"; };
+		D259C2FF1BEB4DB300794F54 /* LeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
+		D259C3061BEB587B00794F54 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		D259C3071BEB587B00794F54 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		D259C30E1BEB734900794F54 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D259C3121BEB755600794F54 /* TargetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetViewController.h; sourceTree = "<group>"; };
+		D259C3131BEB755600794F54 /* TargetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TargetViewController.m; sourceTree = "<group>"; };
+		D259C3161BEBB92400794F54 /* LeftMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuTableViewCell.h; sourceTree = "<group>"; };
+		D259C3171BEBB92400794F54 /* LeftMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuTableViewCell.m; sourceTree = "<group>"; };
+		D29AA91F1BEC94F100A1BF73 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		D29AA9201BEC972C00A1BF73 /* TimeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeManager.h; sourceTree = "<group>"; };
+		D29AA9211BEC972C00A1BF73 /* TimeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeManager.m; sourceTree = "<group>"; };
+		E59C7E90CE9C0253651E3222 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09CE7D63A5D3D54BA9B3F2B8 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +82,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10868359E8B6BC268F8B361B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E59C7E90CE9C0253651E3222 /* Pods.debug.xcconfig */,
+				897933474A3B71545E4C0C0B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A706EE69F37BE35DD40B904F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3539DA53E397647189DF35CA /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D259C2B21BEAFBAD00794F54 = {
 			isa = PBXGroup;
 			children = (
 				D259C2BD1BEAFBAD00794F54 /* Pomodoro */,
 				D259C2D71BEAFBAD00794F54 /* PomodoroTests */,
 				D259C2BC1BEAFBAD00794F54 /* Products */,
+				10868359E8B6BC268F8B361B /* Pods */,
+				A706EE69F37BE35DD40B904F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,13 +122,11 @@
 		D259C2BD1BEAFBAD00794F54 /* Pomodoro */ = {
 			isa = PBXGroup;
 			children = (
-				D259C2C21BEAFBAD00794F54 /* AppDelegate.h */,
-				D259C2C31BEAFBAD00794F54 /* AppDelegate.m */,
-				D259C2C51BEAFBAD00794F54 /* ViewController.h */,
-				D259C2C61BEAFBAD00794F54 /* ViewController.m */,
-				D259C2C81BEAFBAD00794F54 /* Main.storyboard */,
-				D259C2CB1BEAFBAD00794F54 /* Images.xcassets */,
-				D259C2CD1BEAFBAD00794F54 /* LaunchScreen.xib */,
+				D259C3101BEB754800794F54 /* Target */,
+				D259C3051BEB586F00794F54 /* Root */,
+				D259C2F51BEB4D0900794F54 /* Home */,
+				D259C2F91BEB4D0900794F54 /* Menu */,
+				D259C2EC1BEB4CC700794F54 /* Main */,
 				D259C2BE1BEAFBAD00794F54 /* Supporting Files */,
 			);
 			path = Pomodoro;
@@ -96,8 +135,10 @@
 		D259C2BE1BEAFBAD00794F54 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D259C2BF1BEAFBAD00794F54 /* Info.plist */,
-				D259C2C01BEAFBAD00794F54 /* main.m */,
+				D259C30E1BEB734900794F54 /* Info.plist */,
+				D259C2C81BEAFBAD00794F54 /* Main.storyboard */,
+				D259C2CB1BEAFBAD00794F54 /* Images.xcassets */,
+				D259C2CD1BEAFBAD00794F54 /* LaunchScreen.xib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -119,6 +160,113 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D259C2EC1BEB4CC700794F54 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D259C2ED1BEB4CC700794F54 /* Others */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D259C2ED1BEB4CC700794F54 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				D29AA91F1BEC94F100A1BF73 /* Constant.h */,
+				D259C2EE1BEB4CC700794F54 /* AppDelegate.h */,
+				D259C2EF1BEB4CC700794F54 /* AppDelegate.m */,
+				D259C2F11BEB4CC700794F54 /* main.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		D259C2F51BEB4D0900794F54 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D259C2F61BEB4D0900794F54 /* Controller */,
+				D259C2F71BEB4D0900794F54 /* Model */,
+				D259C2F81BEB4D0900794F54 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D259C2F61BEB4D0900794F54 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D259C2FB1BEB4D6300794F54 /* HomeViewController.h */,
+				D259C2FC1BEB4D6300794F54 /* HomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D259C2F71BEB4D0900794F54 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D29AA9201BEC972C00A1BF73 /* TimeManager.h */,
+				D29AA9211BEC972C00A1BF73 /* TimeManager.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D259C2F81BEB4D0900794F54 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D259C2F91BEB4D0900794F54 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				D259C3151BEBB90700794F54 /* View */,
+				D259C2FA1BEB4D0900794F54 /* Controller */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		D259C2FA1BEB4D0900794F54 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D259C2FE1BEB4DB300794F54 /* LeftMenuViewController.h */,
+				D259C2FF1BEB4DB300794F54 /* LeftMenuViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D259C3051BEB586F00794F54 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				D259C3061BEB587B00794F54 /* RootViewController.h */,
+				D259C3071BEB587B00794F54 /* RootViewController.m */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		D259C3101BEB754800794F54 /* Target */ = {
+			isa = PBXGroup;
+			children = (
+				D259C3111BEB754800794F54 /* Controller */,
+			);
+			path = Target;
+			sourceTree = "<group>";
+		};
+		D259C3111BEB754800794F54 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D259C3121BEB755600794F54 /* TargetViewController.h */,
+				D259C3131BEB755600794F54 /* TargetViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D259C3151BEBB90700794F54 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D259C3161BEBB92400794F54 /* LeftMenuTableViewCell.h */,
+				D259C3171BEBB92400794F54 /* LeftMenuTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +274,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D259C2DE1BEAFBAD00794F54 /* Build configuration list for PBXNativeTarget "Pomodoro" */;
 			buildPhases = (
+				C5B3807EA1F98D43ED3F8947 /* Check Pods Manifest.lock */,
 				D259C2B71BEAFBAD00794F54 /* Sources */,
 				D259C2B81BEAFBAD00794F54 /* Frameworks */,
 				D259C2B91BEAFBAD00794F54 /* Resources */,
+				DE8583F24B0AF33692666227 /* Embed Pods Frameworks */,
+				6085B997FDB1FB71682410A7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,6 +350,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D259C30F1BEB734900794F54 /* Info.plist in Resources */,
 				D259C2CA1BEAFBAD00794F54 /* Main.storyboard in Resources */,
 				D259C2CF1BEAFBAD00794F54 /* LaunchScreen.xib in Resources */,
 				D259C2CC1BEAFBAD00794F54 /* Images.xcassets in Resources */,
@@ -214,14 +366,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6085B997FDB1FB71682410A7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5B3807EA1F98D43ED3F8947 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DE8583F24B0AF33692666227 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D259C2B71BEAFBAD00794F54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D259C2C71BEAFBAD00794F54 /* ViewController.m in Sources */,
-				D259C2C41BEAFBAD00794F54 /* AppDelegate.m in Sources */,
-				D259C2C11BEAFBAD00794F54 /* main.m in Sources */,
+				D259C2F41BEB4CC700794F54 /* main.m in Sources */,
+				D259C3181BEBB92400794F54 /* LeftMenuTableViewCell.m in Sources */,
+				D29AA9221BEC972C00A1BF73 /* TimeManager.m in Sources */,
+				D259C2F21BEB4CC700794F54 /* AppDelegate.m in Sources */,
+				D259C3001BEB4DB300794F54 /* LeftMenuViewController.m in Sources */,
+				D259C2FD1BEB4D6300794F54 /* HomeViewController.m in Sources */,
+				D259C3081BEB587B00794F54 /* RootViewController.m in Sources */,
+				D259C3141BEB755600794F54 /* TargetViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +550,7 @@
 		};
 		D259C2DF1BEAFBAD00794F54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E59C7E90CE9C0253651E3222 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Pomodoro/Info.plist;
@@ -355,6 +561,7 @@
 		};
 		D259C2E01BEAFBAD00794F54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 897933474A3B71545E4C0C0B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Pomodoro/Info.plist;
@@ -416,6 +623,7 @@
 				D259C2E01BEAFBAD00794F54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D259C2E11BEAFBAD00794F54 /* Build configuration list for PBXNativeTarget "PomodoroTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +632,7 @@
 				D259C2E31BEAFBAD00794F54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

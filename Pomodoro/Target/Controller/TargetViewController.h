@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  TargetViewController.h
 //  Pomodoro
 //
 //  Created by Kerwin on 15/11/5.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+@interface TargetViewController : UIViewController
 
 @end
-
