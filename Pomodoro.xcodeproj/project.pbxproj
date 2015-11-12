@@ -18,9 +18,32 @@
 		D259C3001BEB4DB300794F54 /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D259C2FF1BEB4DB300794F54 /* LeftMenuViewController.m */; };
 		D259C3081BEB587B00794F54 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D259C3071BEB587B00794F54 /* RootViewController.m */; };
 		D259C30F1BEB734900794F54 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D259C30E1BEB734900794F54 /* Info.plist */; };
-		D259C3141BEB755600794F54 /* TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D259C3131BEB755600794F54 /* TargetViewController.m */; };
 		D259C3181BEBB92400794F54 /* LeftMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D259C3171BEBB92400794F54 /* LeftMenuTableViewCell.m */; };
+		D269EE411BF08D46004F8B50 /* PlanCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D269EE401BF08D46004F8B50 /* PlanCollectionViewCell.m */; };
+		D269EE441BF08D72004F8B50 /* PlanHeaderReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D269EE431BF08D72004F8B50 /* PlanHeaderReusableView.m */; };
+		D269EE8D1BF0F5EE004F8B50 /* POP体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D269EE871BF0F5EE004F8B50 /* POP体.ttf */; };
+		D269EE8E1BF0F5EE004F8B50 /* School_Script_Dashed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D269EE881BF0F5EE004F8B50 /* School_Script_Dashed.ttf */; };
+		D269EE8F1BF0F5EE004F8B50 /* 圆体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D269EE891BF0F5EE004F8B50 /* 圆体.ttf */; };
+		D269EE901BF0F5EE004F8B50 /* 娃娃体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D269EE8A1BF0F5EE004F8B50 /* 娃娃体.ttf */; };
+		D269EE911BF0F5EE004F8B50 /* 少女体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D269EE8B1BF0F5EE004F8B50 /* 少女体.ttf */; };
+		D269EE921BF0F5EE004F8B50 /* 楷体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D269EE8C1BF0F5EE004F8B50 /* 楷体.ttf */; };
+		D27E29AF1BED91D600691E6E /* NameDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D27E29AE1BED91D600691E6E /* NameDetailViewController.m */; };
+		D27E29B21BED938600691E6E /* NameDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D27E29B11BED938600691E6E /* NameDetailModel.m */; };
+		D27E29B51BEDAB8100691E6E /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D27E29B41BEDAB8100691E6E /* UIBarButtonItem+Extension.m */; };
+		D28F99FD1BF1F5D70076B32A /* PlanNameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D28F99FC1BF1F5D70076B32A /* PlanNameModel.m */; };
+		D2978E9E1BF48A75005E88F1 /* SectionNameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D2978E9D1BF48A75005E88F1 /* SectionNameModel.m */; };
 		D29AA9221BEC972C00A1BF73 /* TimeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D29AA9211BEC972C00A1BF73 /* TimeManager.m */; };
+		D29AA9251BEC9D5C00A1BF73 /* TimerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D29AA9241BEC9D5C00A1BF73 /* TimerModel.m */; };
+		D29AA9281BECAA1800A1BF73 /* StatisticModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D29AA9271BECAA1800A1BF73 /* StatisticModel.m */; };
+		D29AA92B1BECEE7200A1BF73 /* TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29AA92A1BECEE7200A1BF73 /* TargetViewController.m */; };
+		D29AA9341BED09E500A1BF73 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D29AA9331BED09E400A1BF73 /* UIView+Extension.m */; };
+		D2E35F7B1BF2FFD9005FE90D /* AddCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E35F7A1BF2FFD9005FE90D /* AddCollectionViewCell.m */; };
+		D2E35F7E1BF31431005FE90D /* PlanFooterReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E35F7D1BF31431005FE90D /* PlanFooterReusableView.m */; };
+		D2E35F801BF32EC8005FE90D /* PlanCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2E35F7F1BF32EC8005FE90D /* PlanCollectionViewCell.xib */; };
+		D2E35F821BF3313A005FE90D /* AddCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2E35F811BF3313A005FE90D /* AddCollectionViewCell.xib */; };
+		D2E35F841BF331ED005FE90D /* PlanHeaderReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2E35F831BF331ED005FE90D /* PlanHeaderReusableView.xib */; };
+		D2E35F861BF35000005FE90D /* PlanFooterReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2E35F851BF35000005FE90D /* PlanFooterReusableView.xib */; };
+		D2E35F891BF353B6005FE90D /* PlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E35F881BF353B6005FE90D /* PlanViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,13 +76,49 @@
 		D259C3061BEB587B00794F54 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		D259C3071BEB587B00794F54 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		D259C30E1BEB734900794F54 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D259C3121BEB755600794F54 /* TargetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetViewController.h; sourceTree = "<group>"; };
-		D259C3131BEB755600794F54 /* TargetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TargetViewController.m; sourceTree = "<group>"; };
 		D259C3161BEBB92400794F54 /* LeftMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuTableViewCell.h; sourceTree = "<group>"; };
 		D259C3171BEBB92400794F54 /* LeftMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuTableViewCell.m; sourceTree = "<group>"; };
+		D269EE3F1BF08D46004F8B50 /* PlanCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanCollectionViewCell.h; sourceTree = "<group>"; };
+		D269EE401BF08D46004F8B50 /* PlanCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanCollectionViewCell.m; sourceTree = "<group>"; };
+		D269EE421BF08D72004F8B50 /* PlanHeaderReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanHeaderReusableView.h; sourceTree = "<group>"; };
+		D269EE431BF08D72004F8B50 /* PlanHeaderReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanHeaderReusableView.m; sourceTree = "<group>"; };
+		D269EE871BF0F5EE004F8B50 /* POP体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "POP体.ttf"; sourceTree = "<group>"; };
+		D269EE881BF0F5EE004F8B50 /* School_Script_Dashed.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = School_Script_Dashed.ttf; sourceTree = "<group>"; };
+		D269EE891BF0F5EE004F8B50 /* 圆体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "圆体.ttf"; sourceTree = "<group>"; };
+		D269EE8A1BF0F5EE004F8B50 /* 娃娃体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "娃娃体.ttf"; sourceTree = "<group>"; };
+		D269EE8B1BF0F5EE004F8B50 /* 少女体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "少女体.ttf"; sourceTree = "<group>"; };
+		D269EE8C1BF0F5EE004F8B50 /* 楷体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "楷体.ttf"; sourceTree = "<group>"; };
+		D27E29AD1BED91D600691E6E /* NameDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameDetailViewController.h; sourceTree = "<group>"; };
+		D27E29AE1BED91D600691E6E /* NameDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameDetailViewController.m; sourceTree = "<group>"; };
+		D27E29B01BED938600691E6E /* NameDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameDetailModel.h; sourceTree = "<group>"; };
+		D27E29B11BED938600691E6E /* NameDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameDetailModel.m; sourceTree = "<group>"; };
+		D27E29B31BEDAB8100691E6E /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		D27E29B41BEDAB8100691E6E /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		D28F99FB1BF1F5D70076B32A /* PlanNameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanNameModel.h; sourceTree = "<group>"; };
+		D28F99FC1BF1F5D70076B32A /* PlanNameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanNameModel.m; sourceTree = "<group>"; };
+		D2978E9C1BF48A75005E88F1 /* SectionNameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionNameModel.h; sourceTree = "<group>"; };
+		D2978E9D1BF48A75005E88F1 /* SectionNameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionNameModel.m; sourceTree = "<group>"; };
 		D29AA91F1BEC94F100A1BF73 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		D29AA9201BEC972C00A1BF73 /* TimeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeManager.h; sourceTree = "<group>"; };
 		D29AA9211BEC972C00A1BF73 /* TimeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeManager.m; sourceTree = "<group>"; };
+		D29AA9231BEC9D5C00A1BF73 /* TimerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerModel.h; sourceTree = "<group>"; };
+		D29AA9241BEC9D5C00A1BF73 /* TimerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerModel.m; sourceTree = "<group>"; };
+		D29AA9261BECAA1800A1BF73 /* StatisticModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatisticModel.h; sourceTree = "<group>"; };
+		D29AA9271BECAA1800A1BF73 /* StatisticModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatisticModel.m; sourceTree = "<group>"; };
+		D29AA9291BECEE7200A1BF73 /* TargetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetViewController.h; sourceTree = "<group>"; };
+		D29AA92A1BECEE7200A1BF73 /* TargetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TargetViewController.m; sourceTree = "<group>"; };
+		D29AA9321BED09E400A1BF73 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		D29AA9331BED09E400A1BF73 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		D2E35F791BF2FFD9005FE90D /* AddCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCollectionViewCell.h; sourceTree = "<group>"; };
+		D2E35F7A1BF2FFD9005FE90D /* AddCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCollectionViewCell.m; sourceTree = "<group>"; };
+		D2E35F7C1BF31431005FE90D /* PlanFooterReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanFooterReusableView.h; sourceTree = "<group>"; };
+		D2E35F7D1BF31431005FE90D /* PlanFooterReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanFooterReusableView.m; sourceTree = "<group>"; };
+		D2E35F7F1BF32EC8005FE90D /* PlanCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlanCollectionViewCell.xib; sourceTree = "<group>"; };
+		D2E35F811BF3313A005FE90D /* AddCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddCollectionViewCell.xib; sourceTree = "<group>"; };
+		D2E35F831BF331ED005FE90D /* PlanHeaderReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlanHeaderReusableView.xib; sourceTree = "<group>"; };
+		D2E35F851BF35000005FE90D /* PlanFooterReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlanFooterReusableView.xib; sourceTree = "<group>"; };
+		D2E35F871BF353B6005FE90D /* PlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanViewController.h; sourceTree = "<group>"; };
+		D2E35F881BF353B6005FE90D /* PlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanViewController.m; sourceTree = "<group>"; };
 		E59C7E90CE9C0253651E3222 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +181,7 @@
 		D259C2BD1BEAFBAD00794F54 /* Pomodoro */ = {
 			isa = PBXGroup;
 			children = (
+				D269EE351BF0411C004F8B50 /* Plan */,
 				D259C3101BEB754800794F54 /* Target */,
 				D259C3051BEB586F00794F54 /* Root */,
 				D259C2F51BEB4D0900794F54 /* Home */,
@@ -163,6 +223,8 @@
 		D259C2EC1BEB4CC700794F54 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				D269EE861BF0F5EE004F8B50 /* Font */,
+				D29AA9311BED09DD00A1BF73 /* Category */,
 				D259C2ED1BEB4CC700794F54 /* Others */,
 			);
 			path = Main;
@@ -201,6 +263,10 @@
 		D259C2F71BEB4D0900794F54 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D29AA9261BECAA1800A1BF73 /* StatisticModel.h */,
+				D29AA9271BECAA1800A1BF73 /* StatisticModel.m */,
+				D29AA9231BEC9D5C00A1BF73 /* TimerModel.h */,
+				D29AA9241BEC9D5C00A1BF73 /* TimerModel.m */,
 				D29AA9201BEC972C00A1BF73 /* TimeManager.h */,
 				D29AA9211BEC972C00A1BF73 /* TimeManager.m */,
 			);
@@ -244,6 +310,7 @@
 		D259C3101BEB754800794F54 /* Target */ = {
 			isa = PBXGroup;
 			children = (
+				D29AA92C1BED090C00A1BF73 /* Model */,
 				D259C3111BEB754800794F54 /* Controller */,
 			);
 			path = Target;
@@ -252,8 +319,10 @@
 		D259C3111BEB754800794F54 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D259C3121BEB755600794F54 /* TargetViewController.h */,
-				D259C3131BEB755600794F54 /* TargetViewController.m */,
+				D29AA9291BECEE7200A1BF73 /* TargetViewController.h */,
+				D29AA92A1BECEE7200A1BF73 /* TargetViewController.m */,
+				D27E29AD1BED91D600691E6E /* NameDetailViewController.h */,
+				D27E29AE1BED91D600691E6E /* NameDetailViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -265,6 +334,88 @@
 				D259C3171BEBB92400794F54 /* LeftMenuTableViewCell.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		D269EE351BF0411C004F8B50 /* Plan */ = {
+			isa = PBXGroup;
+			children = (
+				D269EE361BF0411C004F8B50 /* Controller */,
+				D269EE371BF0411C004F8B50 /* Model */,
+				D269EE381BF0411C004F8B50 /* View */,
+			);
+			path = Plan;
+			sourceTree = "<group>";
+		};
+		D269EE361BF0411C004F8B50 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D2E35F871BF353B6005FE90D /* PlanViewController.h */,
+				D2E35F881BF353B6005FE90D /* PlanViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D269EE371BF0411C004F8B50 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D28F99FB1BF1F5D70076B32A /* PlanNameModel.h */,
+				D28F99FC1BF1F5D70076B32A /* PlanNameModel.m */,
+				D2978E9C1BF48A75005E88F1 /* SectionNameModel.h */,
+				D2978E9D1BF48A75005E88F1 /* SectionNameModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D269EE381BF0411C004F8B50 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D269EE3F1BF08D46004F8B50 /* PlanCollectionViewCell.h */,
+				D269EE401BF08D46004F8B50 /* PlanCollectionViewCell.m */,
+				D2E35F7F1BF32EC8005FE90D /* PlanCollectionViewCell.xib */,
+				D2E35F791BF2FFD9005FE90D /* AddCollectionViewCell.h */,
+				D2E35F7A1BF2FFD9005FE90D /* AddCollectionViewCell.m */,
+				D2E35F811BF3313A005FE90D /* AddCollectionViewCell.xib */,
+				D269EE421BF08D72004F8B50 /* PlanHeaderReusableView.h */,
+				D269EE431BF08D72004F8B50 /* PlanHeaderReusableView.m */,
+				D2E35F831BF331ED005FE90D /* PlanHeaderReusableView.xib */,
+				D2E35F7C1BF31431005FE90D /* PlanFooterReusableView.h */,
+				D2E35F7D1BF31431005FE90D /* PlanFooterReusableView.m */,
+				D2E35F851BF35000005FE90D /* PlanFooterReusableView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D269EE861BF0F5EE004F8B50 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				D269EE871BF0F5EE004F8B50 /* POP体.ttf */,
+				D269EE881BF0F5EE004F8B50 /* School_Script_Dashed.ttf */,
+				D269EE891BF0F5EE004F8B50 /* 圆体.ttf */,
+				D269EE8A1BF0F5EE004F8B50 /* 娃娃体.ttf */,
+				D269EE8B1BF0F5EE004F8B50 /* 少女体.ttf */,
+				D269EE8C1BF0F5EE004F8B50 /* 楷体.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		D29AA92C1BED090C00A1BF73 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D27E29B01BED938600691E6E /* NameDetailModel.h */,
+				D27E29B11BED938600691E6E /* NameDetailModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D29AA9311BED09DD00A1BF73 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				D27E29B31BEDAB8100691E6E /* UIBarButtonItem+Extension.h */,
+				D27E29B41BEDAB8100691E6E /* UIBarButtonItem+Extension.m */,
+				D29AA9321BED09E400A1BF73 /* UIView+Extension.h */,
+				D29AA9331BED09E400A1BF73 /* UIView+Extension.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,10 +501,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D269EE921BF0F5EE004F8B50 /* 楷体.ttf in Resources */,
+				D269EE911BF0F5EE004F8B50 /* 少女体.ttf in Resources */,
 				D259C30F1BEB734900794F54 /* Info.plist in Resources */,
+				D269EE8D1BF0F5EE004F8B50 /* POP体.ttf in Resources */,
+				D269EE8E1BF0F5EE004F8B50 /* School_Script_Dashed.ttf in Resources */,
 				D259C2CA1BEAFBAD00794F54 /* Main.storyboard in Resources */,
+				D2E35F821BF3313A005FE90D /* AddCollectionViewCell.xib in Resources */,
+				D2E35F861BF35000005FE90D /* PlanFooterReusableView.xib in Resources */,
+				D269EE901BF0F5EE004F8B50 /* 娃娃体.ttf in Resources */,
 				D259C2CF1BEAFBAD00794F54 /* LaunchScreen.xib in Resources */,
+				D2E35F841BF331ED005FE90D /* PlanHeaderReusableView.xib in Resources */,
+				D269EE8F1BF0F5EE004F8B50 /* 圆体.ttf in Resources */,
 				D259C2CC1BEAFBAD00794F54 /* Images.xcassets in Resources */,
+				D2E35F801BF32EC8005FE90D /* PlanCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,13 +581,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				D259C2F41BEB4CC700794F54 /* main.m in Sources */,
+				D2E35F891BF353B6005FE90D /* PlanViewController.m in Sources */,
+				D27E29B21BED938600691E6E /* NameDetailModel.m in Sources */,
 				D259C3181BEBB92400794F54 /* LeftMenuTableViewCell.m in Sources */,
 				D29AA9221BEC972C00A1BF73 /* TimeManager.m in Sources */,
 				D259C2F21BEB4CC700794F54 /* AppDelegate.m in Sources */,
+				D269EE411BF08D46004F8B50 /* PlanCollectionViewCell.m in Sources */,
+				D2978E9E1BF48A75005E88F1 /* SectionNameModel.m in Sources */,
+				D27E29AF1BED91D600691E6E /* NameDetailViewController.m in Sources */,
+				D269EE441BF08D72004F8B50 /* PlanHeaderReusableView.m in Sources */,
+				D28F99FD1BF1F5D70076B32A /* PlanNameModel.m in Sources */,
 				D259C3001BEB4DB300794F54 /* LeftMenuViewController.m in Sources */,
+				D29AA9341BED09E500A1BF73 /* UIView+Extension.m in Sources */,
+				D27E29B51BEDAB8100691E6E /* UIBarButtonItem+Extension.m in Sources */,
+				D29AA92B1BECEE7200A1BF73 /* TargetViewController.m in Sources */,
 				D259C2FD1BEB4D6300794F54 /* HomeViewController.m in Sources */,
+				D2E35F7E1BF31431005FE90D /* PlanFooterReusableView.m in Sources */,
+				D29AA9281BECAA1800A1BF73 /* StatisticModel.m in Sources */,
+				D29AA9251BEC9D5C00A1BF73 /* TimerModel.m in Sources */,
 				D259C3081BEB587B00794F54 /* RootViewController.m in Sources */,
-				D259C3141BEB755600794F54 /* TargetViewController.m in Sources */,
+				D2E35F7B1BF2FFD9005FE90D /* AddCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

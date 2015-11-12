@@ -51,6 +51,11 @@
             [self.sideMenuViewController setContentViewController:[[UINavigationController alloc]initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"TargetViewController"]]animated:YES];
             [self.sideMenuViewController hideMenuViewController];
             break;
+        case 2:
+            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc]initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"PlanViewController"]]animated:YES];
+            [self.sideMenuViewController hideMenuViewController];
+            break;
+
             
         default:
             break;

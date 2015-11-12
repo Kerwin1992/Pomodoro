@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PlanCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYX-Va-8fh">
+                    <rect key="frame" x="10" y="0.0" width="80" height="100"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="IYX-Va-8fh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5jE-jo-mKH"/>
+                <constraint firstItem="IYX-Va-8fh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="Avz-MG-a0h"/>
+                <constraint firstAttribute="bottom" secondItem="IYX-Va-8fh" secondAttribute="bottom" id="TSm-Fq-pxU"/>
+                <constraint firstAttribute="trailing" secondItem="IYX-Va-8fh" secondAttribute="trailing" constant="10" id="ZmO-Hj-rY8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="planCellLabel" destination="IYX-Va-8fh" id="38g-eL-2Yy"/>
+            </connections>
+            <point key="canvasLocation" x="306" y="569"/>
+        </view>
+    </objects>
+</document>

@@ -2,13 +2,18 @@
 //  TargetViewController.m
 //  Pomodoro
 //
-//  Created by Kerwin on 15/11/5.
+//  Created by Kerwin on 15/11/6.
 //  Copyright (c) 2015年 Kerwin. All rights reserved.
 //
 
 #import "TargetViewController.h"
+#import "NameDetailViewController.h"
+#import "NameDetailModel.h"
 
-@interface TargetViewController ()
+@interface TargetViewController (){
+    NSMutableArray *_itemlist;
+    NSMutableArray *_resultlist;
+}
 
 @end
 
@@ -16,22 +21,70 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    
+   
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    if (tableView == self.searchDisplayController.searchResultsTableView) {
+        return [_resultlist count];
+    }else {
+        return [_itemlist count];
+    }
 }
 
-/*
-#pragma mark - Navigation
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
+    static NSString *CellIdentifier = @"Checklist";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    NameDetailModel *nameDetail;
+    if (tableView == self.searchDisplayController.searchResultsTableView) {
+        nameDetail = _resultlist[indexPath.row];
+    }else {
+        nameDetail = _itemlist[indexPath.row];
+    }
+
+    cell.textLabel.text = nameDetail.name;
+    return cell;
+}
+
+- (void)sendAddNameDetail:(NameDetailModel *)nameDetail {
+
+    if (!_itemlist) {
+        _itemlist = [NSMutableArray array];
+    }
+    [_itemlist addObject:nameDetail];
+    [self.tableView reloadData];
+    
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+    if ([segue.identifier isEqualToString:@"AddSegue"]) {
+        NameDetailViewController *controller = (NameDetailViewController *)segue.destinationViewController;
+        controller.Delegate = self;
+    }
+    
 }
-*/
+
+#pragma mark - search
+
+- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString {
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF.name CONTAINS[c] %@",searchString];
+    
+    if (_resultlist) {
+        [_resultlist removeAllObjects];
+    }
+    _resultlist = [NSMutableArray arrayWithArray:[_itemlist filteredArrayUsingPredicate:predicate]];
+    
+    return YES;
+}
+
+
 
 @end
