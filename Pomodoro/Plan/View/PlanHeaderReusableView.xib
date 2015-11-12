@@ -10,23 +10,6 @@
             <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9Z-oU-ago">
-                    <rect key="frame" x="190" y="0.0" width="100" height="50"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="100" id="xG8-UU-ww0"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
-                    <state key="normal" title="Delete">
-                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <state key="highlighted">
-                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="DeleteButtonPressed:" destination="pVd-JN-Tsr" eventType="touchUpInside" id="JC4-sV-aaM"/>
-                    </connections>
-                </button>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" text="Section 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dxh-co-CyK">
                     <rect key="frame" x="20" y="0.0" width="120" height="50"/>
                     <constraints>
@@ -39,15 +22,11 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="N9Z-oU-ago" secondAttribute="trailing" constant="10" id="6O5-n5-fmj"/>
                 <constraint firstItem="Dxh-co-CyK" firstAttribute="leading" secondItem="pVd-JN-Tsr" secondAttribute="leading" constant="20" id="GwM-VA-zC4"/>
-                <constraint firstAttribute="bottom" secondItem="N9Z-oU-ago" secondAttribute="bottom" id="IdK-rk-0RQ"/>
-                <constraint firstItem="N9Z-oU-ago" firstAttribute="top" secondItem="pVd-JN-Tsr" secondAttribute="top" id="Nl7-NF-dwS"/>
                 <constraint firstItem="Dxh-co-CyK" firstAttribute="top" secondItem="pVd-JN-Tsr" secondAttribute="top" id="oVe-Fe-IHF"/>
                 <constraint firstAttribute="bottom" secondItem="Dxh-co-CyK" secondAttribute="bottom" id="yke-nD-aWP"/>
             </constraints>
             <connections>
-                <outlet property="deleteBtn" destination="N9Z-oU-ago" id="T8V-hb-c0e"/>
                 <outlet property="headerTitle" destination="Dxh-co-CyK" id="TZB-86-ZaF"/>
             </connections>
             <point key="canvasLocation" x="73" y="488"/>

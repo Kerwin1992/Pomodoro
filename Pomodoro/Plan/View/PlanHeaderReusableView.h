@@ -19,13 +19,6 @@
 @interface PlanHeaderReusableView : UICollectionReusableView
 
 @property (weak, nonatomic) IBOutlet UILabel *headerTitle;
-@property (weak, nonatomic) IBOutlet UIButton *deleteBtn;
-
-@property (nonatomic,strong)SectionNameModel *secNameModel;
-@property (nonatomic,assign)NSUInteger sectionIndex;
-@property (nonatomic,assign)BOOL hideDelete;
-
-@property (nonatomic,weak)id<PlanHeaderReusableViewDelegate>delegate;
 
 
 @end

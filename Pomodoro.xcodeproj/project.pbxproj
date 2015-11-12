@@ -38,11 +38,9 @@
 		D29AA92B1BECEE7200A1BF73 /* TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29AA92A1BECEE7200A1BF73 /* TargetViewController.m */; };
 		D29AA9341BED09E500A1BF73 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D29AA9331BED09E400A1BF73 /* UIView+Extension.m */; };
 		D2E35F7B1BF2FFD9005FE90D /* AddCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E35F7A1BF2FFD9005FE90D /* AddCollectionViewCell.m */; };
-		D2E35F7E1BF31431005FE90D /* PlanFooterReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E35F7D1BF31431005FE90D /* PlanFooterReusableView.m */; };
 		D2E35F801BF32EC8005FE90D /* PlanCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2E35F7F1BF32EC8005FE90D /* PlanCollectionViewCell.xib */; };
 		D2E35F821BF3313A005FE90D /* AddCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2E35F811BF3313A005FE90D /* AddCollectionViewCell.xib */; };
 		D2E35F841BF331ED005FE90D /* PlanHeaderReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2E35F831BF331ED005FE90D /* PlanHeaderReusableView.xib */; };
-		D2E35F861BF35000005FE90D /* PlanFooterReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2E35F851BF35000005FE90D /* PlanFooterReusableView.xib */; };
 		D2E35F891BF353B6005FE90D /* PlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E35F881BF353B6005FE90D /* PlanViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -111,12 +109,9 @@
 		D29AA9331BED09E400A1BF73 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		D2E35F791BF2FFD9005FE90D /* AddCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCollectionViewCell.h; sourceTree = "<group>"; };
 		D2E35F7A1BF2FFD9005FE90D /* AddCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCollectionViewCell.m; sourceTree = "<group>"; };
-		D2E35F7C1BF31431005FE90D /* PlanFooterReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanFooterReusableView.h; sourceTree = "<group>"; };
-		D2E35F7D1BF31431005FE90D /* PlanFooterReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanFooterReusableView.m; sourceTree = "<group>"; };
 		D2E35F7F1BF32EC8005FE90D /* PlanCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlanCollectionViewCell.xib; sourceTree = "<group>"; };
 		D2E35F811BF3313A005FE90D /* AddCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddCollectionViewCell.xib; sourceTree = "<group>"; };
 		D2E35F831BF331ED005FE90D /* PlanHeaderReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlanHeaderReusableView.xib; sourceTree = "<group>"; };
-		D2E35F851BF35000005FE90D /* PlanFooterReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlanFooterReusableView.xib; sourceTree = "<group>"; };
 		D2E35F871BF353B6005FE90D /* PlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanViewController.h; sourceTree = "<group>"; };
 		D2E35F881BF353B6005FE90D /* PlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanViewController.m; sourceTree = "<group>"; };
 		E59C7E90CE9C0253651E3222 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -378,9 +373,6 @@
 				D269EE421BF08D72004F8B50 /* PlanHeaderReusableView.h */,
 				D269EE431BF08D72004F8B50 /* PlanHeaderReusableView.m */,
 				D2E35F831BF331ED005FE90D /* PlanHeaderReusableView.xib */,
-				D2E35F7C1BF31431005FE90D /* PlanFooterReusableView.h */,
-				D2E35F7D1BF31431005FE90D /* PlanFooterReusableView.m */,
-				D2E35F851BF35000005FE90D /* PlanFooterReusableView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -508,7 +500,6 @@
 				D269EE8E1BF0F5EE004F8B50 /* School_Script_Dashed.ttf in Resources */,
 				D259C2CA1BEAFBAD00794F54 /* Main.storyboard in Resources */,
 				D2E35F821BF3313A005FE90D /* AddCollectionViewCell.xib in Resources */,
-				D2E35F861BF35000005FE90D /* PlanFooterReusableView.xib in Resources */,
 				D269EE901BF0F5EE004F8B50 /* 娃娃体.ttf in Resources */,
 				D259C2CF1BEAFBAD00794F54 /* LaunchScreen.xib in Resources */,
 				D2E35F841BF331ED005FE90D /* PlanHeaderReusableView.xib in Resources */,
@@ -596,7 +587,6 @@
 				D27E29B51BEDAB8100691E6E /* UIBarButtonItem+Extension.m in Sources */,
 				D29AA92B1BECEE7200A1BF73 /* TargetViewController.m in Sources */,
 				D259C2FD1BEB4D6300794F54 /* HomeViewController.m in Sources */,
-				D2E35F7E1BF31431005FE90D /* PlanFooterReusableView.m in Sources */,
 				D29AA9281BECAA1800A1BF73 /* StatisticModel.m in Sources */,
 				D29AA9251BEC9D5C00A1BF73 /* TimerModel.m in Sources */,
 				D259C3081BEB587B00794F54 /* RootViewController.m in Sources */,
