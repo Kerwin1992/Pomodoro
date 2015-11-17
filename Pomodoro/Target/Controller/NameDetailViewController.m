@@ -10,7 +10,9 @@
 #import "NameDetailModel.h"
 #import "UIBarButtonItem+Extension.h"
 
-@interface NameDetailViewController ()
+@interface NameDetailViewController (){
+    BOOL isEdit;
+}
 
 @end
 
@@ -19,6 +21,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(back) image:@"navigationbar_back" highImage:@"navigationbar_back_highlighted"];
+    isEdit = NO;
+    if (_nameToEdit) {
+        _nameTextView.text = _nameToEdit.name;
+        isEdit = YES;
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -34,10 +41,22 @@
         
         return;
     }
+    if (isEdit) {
+        _nameToEdit = [self listOnSubviews];
+        [_Delegate sendEditNameDetail:_nameToEdit];
+    }else{
+        NameDetailModel *nameDetail = [self listOnSubviews];
+        [_Delegate sendAddNameDetail:nameDetail];
+        
+    }
+    
+    [self.nameTextView resignFirstResponder];
+}
+
+- (NameDetailModel *)listOnSubviews {
     NameDetailModel *nameDetail = [[NameDetailModel alloc]init];
     nameDetail.name = _nameTextView.text;
-    [_Delegate sendAddNameDetail:nameDetail];
-    [self.nameTextView resignFirstResponder];
+    return nameDetail;
 }
 
 - (void)back{

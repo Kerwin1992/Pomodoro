@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "NameDetailViewController.h"
+#import "EditViewController.h"
 
-@interface TargetViewController : UITableViewController<NameDetailViewControllerDelegate,UISearchDisplayDelegate>
+
+@interface TargetViewController : UITableViewController<NameDetailViewControllerDelegate,EditViewControllerDelegate,UISearchDisplayDelegate>
 
 @end

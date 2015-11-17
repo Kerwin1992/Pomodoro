@@ -30,13 +30,16 @@
 		D27E29AF1BED91D600691E6E /* NameDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D27E29AE1BED91D600691E6E /* NameDetailViewController.m */; };
 		D27E29B21BED938600691E6E /* NameDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D27E29B11BED938600691E6E /* NameDetailModel.m */; };
 		D27E29B51BEDAB8100691E6E /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D27E29B41BEDAB8100691E6E /* UIBarButtonItem+Extension.m */; };
+		D284728A1BF82AFE00CA5D14 /* PlanTargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D28472891BF82AFE00CA5D14 /* PlanTargetViewController.m */; };
+		D284728D1BF8D05D00CA5D14 /* PNDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D284728C1BF8D05D00CA5D14 /* PNDetailModel.m */; };
+		D28472901BF8D0FE00CA5D14 /* PTNameDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D284728F1BF8D0FE00CA5D14 /* PTNameDetailViewController.m */; };
 		D28F99FD1BF1F5D70076B32A /* PlanNameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D28F99FC1BF1F5D70076B32A /* PlanNameModel.m */; };
-		D2978E9E1BF48A75005E88F1 /* SectionNameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D2978E9D1BF48A75005E88F1 /* SectionNameModel.m */; };
 		D29AA9221BEC972C00A1BF73 /* TimeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D29AA9211BEC972C00A1BF73 /* TimeManager.m */; };
 		D29AA9251BEC9D5C00A1BF73 /* TimerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D29AA9241BEC9D5C00A1BF73 /* TimerModel.m */; };
 		D29AA9281BECAA1800A1BF73 /* StatisticModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D29AA9271BECAA1800A1BF73 /* StatisticModel.m */; };
 		D29AA92B1BECEE7200A1BF73 /* TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29AA92A1BECEE7200A1BF73 /* TargetViewController.m */; };
 		D29AA9341BED09E500A1BF73 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D29AA9331BED09E400A1BF73 /* UIView+Extension.m */; };
+		D2BB608E1BF9831400A0716A /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB608D1BF9831400A0716A /* EditViewController.m */; };
 		D2E35F7B1BF2FFD9005FE90D /* AddCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E35F7A1BF2FFD9005FE90D /* AddCollectionViewCell.m */; };
 		D2E35F801BF32EC8005FE90D /* PlanCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2E35F7F1BF32EC8005FE90D /* PlanCollectionViewCell.xib */; };
 		D2E35F821BF3313A005FE90D /* AddCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2E35F811BF3313A005FE90D /* AddCollectionViewCell.xib */; };
@@ -92,10 +95,14 @@
 		D27E29B11BED938600691E6E /* NameDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameDetailModel.m; sourceTree = "<group>"; };
 		D27E29B31BEDAB8100691E6E /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
 		D27E29B41BEDAB8100691E6E /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		D28472881BF82AFE00CA5D14 /* PlanTargetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlanTargetViewController.h; path = ../../PlanTarget/Controller/PlanTargetViewController.h; sourceTree = "<group>"; };
+		D28472891BF82AFE00CA5D14 /* PlanTargetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlanTargetViewController.m; path = ../../PlanTarget/Controller/PlanTargetViewController.m; sourceTree = "<group>"; };
+		D284728B1BF8D05D00CA5D14 /* PNDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNDetailModel.h; sourceTree = "<group>"; };
+		D284728C1BF8D05D00CA5D14 /* PNDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNDetailModel.m; sourceTree = "<group>"; };
+		D284728E1BF8D0FE00CA5D14 /* PTNameDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTNameDetailViewController.h; sourceTree = "<group>"; };
+		D284728F1BF8D0FE00CA5D14 /* PTNameDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTNameDetailViewController.m; sourceTree = "<group>"; };
 		D28F99FB1BF1F5D70076B32A /* PlanNameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanNameModel.h; sourceTree = "<group>"; };
 		D28F99FC1BF1F5D70076B32A /* PlanNameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanNameModel.m; sourceTree = "<group>"; };
-		D2978E9C1BF48A75005E88F1 /* SectionNameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionNameModel.h; sourceTree = "<group>"; };
-		D2978E9D1BF48A75005E88F1 /* SectionNameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionNameModel.m; sourceTree = "<group>"; };
 		D29AA91F1BEC94F100A1BF73 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		D29AA9201BEC972C00A1BF73 /* TimeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeManager.h; sourceTree = "<group>"; };
 		D29AA9211BEC972C00A1BF73 /* TimeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeManager.m; sourceTree = "<group>"; };
@@ -107,6 +114,8 @@
 		D29AA92A1BECEE7200A1BF73 /* TargetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TargetViewController.m; sourceTree = "<group>"; };
 		D29AA9321BED09E400A1BF73 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		D29AA9331BED09E400A1BF73 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		D2BB608C1BF9831400A0716A /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		D2BB608D1BF9831400A0716A /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 		D2E35F791BF2FFD9005FE90D /* AddCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCollectionViewCell.h; sourceTree = "<group>"; };
 		D2E35F7A1BF2FFD9005FE90D /* AddCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCollectionViewCell.m; sourceTree = "<group>"; };
 		D2E35F7F1BF32EC8005FE90D /* PlanCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlanCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -316,6 +325,8 @@
 			children = (
 				D29AA9291BECEE7200A1BF73 /* TargetViewController.h */,
 				D29AA92A1BECEE7200A1BF73 /* TargetViewController.m */,
+				D2BB608C1BF9831400A0716A /* EditViewController.h */,
+				D2BB608D1BF9831400A0716A /* EditViewController.m */,
 				D27E29AD1BED91D600691E6E /* NameDetailViewController.h */,
 				D27E29AE1BED91D600691E6E /* NameDetailViewController.m */,
 			);
@@ -346,6 +357,10 @@
 			children = (
 				D2E35F871BF353B6005FE90D /* PlanViewController.h */,
 				D2E35F881BF353B6005FE90D /* PlanViewController.m */,
+				D28472881BF82AFE00CA5D14 /* PlanTargetViewController.h */,
+				D28472891BF82AFE00CA5D14 /* PlanTargetViewController.m */,
+				D284728E1BF8D0FE00CA5D14 /* PTNameDetailViewController.h */,
+				D284728F1BF8D0FE00CA5D14 /* PTNameDetailViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -355,8 +370,8 @@
 			children = (
 				D28F99FB1BF1F5D70076B32A /* PlanNameModel.h */,
 				D28F99FC1BF1F5D70076B32A /* PlanNameModel.m */,
-				D2978E9C1BF48A75005E88F1 /* SectionNameModel.h */,
-				D2978E9D1BF48A75005E88F1 /* SectionNameModel.m */,
+				D284728B1BF8D05D00CA5D14 /* PNDetailModel.h */,
+				D284728C1BF8D05D00CA5D14 /* PNDetailModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -578,17 +593,20 @@
 				D29AA9221BEC972C00A1BF73 /* TimeManager.m in Sources */,
 				D259C2F21BEB4CC700794F54 /* AppDelegate.m in Sources */,
 				D269EE411BF08D46004F8B50 /* PlanCollectionViewCell.m in Sources */,
-				D2978E9E1BF48A75005E88F1 /* SectionNameModel.m in Sources */,
 				D27E29AF1BED91D600691E6E /* NameDetailViewController.m in Sources */,
 				D269EE441BF08D72004F8B50 /* PlanHeaderReusableView.m in Sources */,
 				D28F99FD1BF1F5D70076B32A /* PlanNameModel.m in Sources */,
+				D28472901BF8D0FE00CA5D14 /* PTNameDetailViewController.m in Sources */,
+				D2BB608E1BF9831400A0716A /* EditViewController.m in Sources */,
 				D259C3001BEB4DB300794F54 /* LeftMenuViewController.m in Sources */,
 				D29AA9341BED09E500A1BF73 /* UIView+Extension.m in Sources */,
 				D27E29B51BEDAB8100691E6E /* UIBarButtonItem+Extension.m in Sources */,
 				D29AA92B1BECEE7200A1BF73 /* TargetViewController.m in Sources */,
+				D284728A1BF82AFE00CA5D14 /* PlanTargetViewController.m in Sources */,
 				D259C2FD1BEB4D6300794F54 /* HomeViewController.m in Sources */,
 				D29AA9281BECAA1800A1BF73 /* StatisticModel.m in Sources */,
 				D29AA9251BEC9D5C00A1BF73 /* TimerModel.m in Sources */,
+				D284728D1BF8D05D00CA5D14 /* PNDetailModel.m in Sources */,
 				D259C3081BEB587B00794F54 /* RootViewController.m in Sources */,
 				D2E35F7B1BF2FFD9005FE90D /* AddCollectionViewCell.m in Sources */,
 			);

@@ -14,6 +14,7 @@
 
 @optional
 - (void)sendAddNameDetail:(NameDetailModel *)nameDetail;
+- (void)sendEditNameDetail:(NameDetailModel *)nameDetail;
 
 @end
 
@@ -22,5 +23,6 @@
 @property(nonatomic,weak)id<NameDetailViewControllerDelegate>Delegate;
 
 @property (weak, nonatomic) IBOutlet UITextView *nameTextView;
+@property (nonatomic, strong)NameDetailModel *nameToEdit;
 
 @end

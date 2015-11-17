@@ -8,13 +8,7 @@
 
 #import <UIKit/UIKit.h>
 @class PlanHeaderReusableView;
-@class SectionNameModel;
 
-@protocol PlanHeaderReusableViewDelegate <NSObject>
-
-- (void)planHeaderDeleteSectionPressed:(PlanHeaderReusableView*)headerView;
-
-@end
 
 @interface PlanHeaderReusableView : UICollectionReusableView
 

@@ -9,8 +9,10 @@
 #import "HomeViewController.h"
 #import "TimeManager.h"
 #import "TimerModel.h"
+#import "NameDetailModel.h"
 
-@interface HomeViewController (){
+@interface HomeViewController ()
+{
     
     NSUInteger countDownValue;//剩余时间
 }
@@ -20,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *startBtn;
 @property (weak, nonatomic) IBOutlet UIButton *pauseBtn;
 @property (nonatomic) NSTimer *generalTimer;
+
 
 @end
 
@@ -39,6 +42,7 @@
     self.statusLabel.text = @"";
     
     [UIView commitAnimations];
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -187,8 +191,6 @@
     [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
     [UIView setAnimationDelegate:self];
 }
-
-
 
 
 

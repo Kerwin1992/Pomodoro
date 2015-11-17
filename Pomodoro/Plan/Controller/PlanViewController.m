@@ -11,13 +11,17 @@
 
 #import "AddCollectionViewCell.h"
 #import "PlanCollectionViewCell.h"
-#import "PlanNameModel.h"
-#import "SectionNameModel.h"
+#import "PlanTargetViewController.h"
 
-@interface PlanViewController () <UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
+#import "PlanNameModel.h"
+
+
+@interface PlanViewController () <UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout,UIGestureRecognizerDelegate>
 
 @property (nonatomic,weak)UICollectionView *collectionView;
 @property (nonatomic,strong)NSMutableArray *itemArray;
+@property (nonatomic,assign)NSUInteger *itemIndexPath;
+//@property (nonatomic,strong)PlanNameModel *nameModel;
 
 //@property (nonatomic,assign)NSInteger sectionIndex;
 
@@ -25,6 +29,7 @@
 @end
 
 @implementation PlanViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -39,7 +44,7 @@
     collectionView.alwaysBounceVertical = YES;
     collectionView.dataSource = self;
     collectionView.delegate = self;
-    self.collectionView = collectionView;
+    
     
     [collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([AddCollectionViewCell class]) bundle:nil]
      forCellWithReuseIdentifier:NSStringFromClass([AddCollectionViewCell class])];
@@ -50,39 +55,97 @@
     [collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([PlanHeaderReusableView class]) bundle:nil]
      forSupplementaryViewOfKind:UICollectionElementKindSectionHeader
             withReuseIdentifier:NSStringFromClass([PlanHeaderReusableView class])];
-
     
+    UILongPressGestureRecognizer *lpgr = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(handLongPress:)];
+    lpgr.minimumPressDuration = 0.5;
+    lpgr.delegate = self;
+    lpgr.delaysTouchesBegan = YES;
+    
+    [collectionView addGestureRecognizer:lpgr];
+
     // Add to view
     [self.view addSubview:collectionView];
+    
+    self.collectionView = collectionView;
+}
+
+
+- (void)handLongPress:(UILongPressGestureRecognizer *)gestureRecognizer {
+
+    if (gestureRecognizer.state != UIGestureRecognizerStateEnded) {
+        return;
+    }
+    CGPoint p = [gestureRecognizer locationInView:self.collectionView];
+    NSIndexPath *indexPath = [self.collectionView indexPathForItemAtPoint:p];
+    if (indexPath == nil) {
+        NSLog(@"cannot find indexpath");
+    }else {
+        NSArray *itemName = self.itemArray;
+        if (indexPath.row == itemName.count) {
+            return;
+        }
+        UIAlertController *alertSheet = [UIAlertController alertControllerWithTitle:@"标题" message:@"弹出信息" preferredStyle:UIAlertControllerStyleActionSheet];
+        [alertSheet addAction:[UIAlertAction actionWithTitle:@"重命名" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+            
+            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"重命名" message:@"请输入" preferredStyle:UIAlertControllerStyleAlert];
+            
+            [alertController addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+                
+            }]];
+            
+            UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+                //重命名
+                UITextField *nameTextField = alertController.textFields.firstObject;
+                PlanNameModel *nameModel = self.itemArray[indexPath.item];
+                nameModel.name = nameTextField.text;
+                
+                PlanCollectionViewCell *pCell = (PlanCollectionViewCell*)[self.collectionView cellForItemAtIndexPath:indexPath];
+                pCell.nameModel = nameModel;
+                
+             }];
+            okAction.enabled = NO;
+            [alertController addAction:okAction];
+            
+            
+            
+            
+            [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+                
+                [textField addTarget:self action:@selector(alertTextFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
+                
+            }];
+            [self presentViewController:alertController animated:YES completion:nil];
+            
+        }]];
+        
+        [alertSheet addAction:[UIAlertAction actionWithTitle:@"删除" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+            [self deleteItemAtIndexPath:indexPath];
+            
+        }]];
+        [alertSheet addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+            
+        }]];
+        
+        
+        [self presentViewController:alertSheet animated:YES completion:nil];
+    }
 }
 
 
 - (void)sendItemName:(PlanNameModel*)pName{
     
     //NSMutableArray *planNames = self.itemArray;
-    
+    //itemArray中装的时模型
     [self.itemArray addObject:pName];
     if(self.itemArray.count == 1){
     
         [self.collectionView reloadData];
     }else{
-    
-//        [self.collectionView performBatchUpdates:^{
-//            NSMutableArray *arrayWithIndexPaths = [NSMutableArray array];
-//            for (NSUInteger i = [self.collectionView numberOfItemsInSection:0]; i < self.itemArray.count ; i++)
-//            {
-//                [arrayWithIndexPaths addObject:[NSIndexPath indexPathForRow:i inSection:0]];
-//            }
-//            
-//            [self.collectionView insertItemsAtIndexPaths:arrayWithIndexPaths];
-//        } completion:nil];
         [self.collectionView insertItemsAtIndexPaths:@[[NSIndexPath indexPathForItem:self.itemArray.count - 1 inSection:0]]];
         
     }
     
 }
-
-
 
 - (void)deleteItemAtIndexPath:(NSIndexPath *)indexPath {
 
@@ -137,15 +200,6 @@
     
 }
 
-
-
-
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section
-{
-    // only the height component is used
-    return CGSizeMake(50, 50);
-}
-
 #pragma mark - CollectionView代理方法
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
@@ -169,12 +223,10 @@
             nameModel.name = nameTextField.text;
             //将这个值传过去
             [self sendItemName:nameModel];
+            
         }];
         okAction.enabled = NO;
         [alertController addAction:okAction];
-        
-     
-
         
         [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
             
@@ -186,8 +238,18 @@
     }
     else
     {
-        //跳入下一个页面，这里只是暂时这么写
-        [self deleteItemAtIndexPath:indexPath];
+        //[self.collectionView reloadData];
+        //跳入下一个页面
+        PlanNameModel *nameModel = self.itemArray[indexPath.item];
+        [self performSegueWithIdentifier:@"showTarget" sender:nameModel];
+    }
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+
+    if ([segue.identifier isEqualToString:@"showTarget"]) {
+        PlanTargetViewController *controller = segue.destinationViewController;
+        controller.nameModel = sender;
     }
 }
 
@@ -203,15 +265,37 @@
     }
 }
 
+#pragma mark - UICollectionViewDelegateFlowLayout
 
+//设置header的宽高
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section
+{
+    // only the height component is used
+    return CGSizeMake(50, 50);
+}
 
+//设置cell的宽高
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
 
+    return CGSizeMake(100, 100);
+}
 
+//设置每组cell的边界，这里只有1组，所以只用设计一组
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
 
+    return UIEdgeInsetsMake(10, 10, 10, 10);
+}
 
+//设置cell的最小列间距
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section{
 
+    return 10;
+}
+//设置cell的最小行间距
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
 
-
+    return 15;
+}
 
 
 

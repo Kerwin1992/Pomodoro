@@ -7,11 +7,11 @@
 //
 
 #import "PlanHeaderReusableView.h"
-#import "SectionNameModel.h"
+
 
 @interface PlanHeaderReusableView ()
 
-- (IBAction)DeleteButtonPressed:(id)sender;
+
 
 
 
