@@ -55,7 +55,14 @@
             [self.sideMenuViewController setContentViewController:[[UINavigationController alloc]initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"PlanViewController"]]animated:YES];
             [self.sideMenuViewController hideMenuViewController];
             break;
-
+        case 3:
+            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc]initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"HistoryViewController"]]animated:YES];
+            [self.sideMenuViewController hideMenuViewController];
+            break;
+        case 4:
+            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc]initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"MoreViewController"]]animated:YES];
+            [self.sideMenuViewController hideMenuViewController];
+            break;
             
         default:
             break;
@@ -78,10 +85,6 @@
     LeftMenuTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[LeftMenuTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-        cell.backgroundColor = [UIColor whiteColor];
-        //cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:22];
-        //cell.textLabel.textColor = [UIColor darkGrayColor];
-        //cell.textLabel.highlightedTextColor = [UIColor lightGrayColor];
         
         cell.selectedBackgroundView = [[UIView alloc] init];
     }
@@ -89,13 +92,20 @@
     NSArray *titles = @[@"番茄", @"小目标", @"大计划", @"历史", @"设置"];
     NSArray *images = @[@"tomato-contur",@"Gavel",@"CFR",@"Building",@"Settings"];
     cell.menuLabel.text = titles[indexPath.row];
-
+    cell.menuLabel.font = [UIFont fontWithName:@"DFPOP1W5" size:20];
     cell.menuImageView.image = [UIImage imageNamed:images[indexPath.row]];
     
     
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    cell.backgroundColor = [UIColor colorWithRed:220.0/255 green:255.0/255 blue:255.0/255 alpha:1];
+    cell.textLabel.backgroundColor = [UIColor clearColor];
+    cell.detailTextLabel.backgroundColor = [UIColor clearColor];
+    
+}
 
 
 

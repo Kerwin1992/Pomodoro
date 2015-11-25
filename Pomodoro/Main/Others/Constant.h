@@ -9,7 +9,10 @@
 #ifndef Pomodoro_Constant_h
 #define Pomodoro_Constant_h
 
-#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define screenHeight [[UIScreen mainScreen]bounds].size.height
+#define screenWidth  [[UIScreen mainScreen]bounds].size.width
+
+
 
 #define kWorkingTimeKey @"workingTimeKey"
 #define kShortPauseTimeKey @"shortPauseTimeKey"
@@ -18,5 +21,10 @@
 #define kTodaysPomodoroKey @"todaysPomodoroKey"
 #define kcurrentPomodoroKey @"currentPomodoroKey"
 #define kMaximumPomodoroKey @"maximumPomodoroKey"
+
+#define kLastDaysKey @"last7DaysKey"
+#define kYesterdayPomodoroKey @"yesterdayPomodoroKey"
+
+#define kLastOpeningTimestampKey @"lastOpeningTimestampKey"
 
 #endif

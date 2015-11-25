@@ -7,10 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+@class NameDetailModel;
+@class HomeViewController;
 
+@protocol HomeViewControllerDelegate<NSObject>
+
+- (void)homeViewControllerDidDisspear:(HomeViewController *)controller;
+
+@end
 
 @interface HomeViewController : UIViewController
 
+@property(nonatomic,weak)id<HomeViewControllerDelegate>delegate;
 
+@property (nonatomic,strong)NameDetailModel *detailModel;
 
 @end

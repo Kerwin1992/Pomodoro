@@ -11,6 +11,6 @@
 @interface PlanNameModel : NSObject
 @property(nonatomic,copy)NSString *name;
 
-
+@property(nonatomic,strong)NSMutableArray *list;
 
 @end

@@ -11,13 +11,20 @@
 @implementation PlanNameModel
 
 
-//+ (PlanNameModel*)planName:(NSString *)name
-//{
-//    PlanNameModel *pName = [[PlanNameModel alloc] init];
-//    pName.name = name;
-//    return pName;
-//}
+- (void)encodeWithCoder:(NSCoder *)aCoder{
+    [aCoder encodeObject:_name forKey:@"name"];
+    [aCoder encodeObject:_list forKey:@"list"];
+    
+}
 
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    
+    if (self = [super init]) {
+        _name = [aDecoder decodeObjectForKey:@"name"];
+        _list = [aDecoder decodeObjectForKey:@"list"];
+    }
+    return self;
+}
 
 
 

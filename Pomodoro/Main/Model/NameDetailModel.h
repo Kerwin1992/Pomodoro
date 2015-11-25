@@ -8,9 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NameDetailModel : NSObject
+@interface NameDetailModel : NSObject<NSCoding>
 
 
 @property (nonatomic, copy)NSString *name;
+@property(nonatomic,copy)NSString *pickerTime;
+@property(nonatomic,copy)NSString *planName;
 
 @end

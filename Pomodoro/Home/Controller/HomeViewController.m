@@ -9,6 +9,7 @@
 #import "HomeViewController.h"
 #import "TimeManager.h"
 #import "TimerModel.h"
+#import "StatisticModel.h"
 #import "NameDetailModel.h"
 
 @interface HomeViewController ()
@@ -21,6 +22,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *stopBtn;
 @property (weak, nonatomic) IBOutlet UIButton *startBtn;
 @property (weak, nonatomic) IBOutlet UIButton *pauseBtn;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+
 @property (nonatomic) NSTimer *generalTimer;
 
 
@@ -40,8 +43,15 @@
     self.stopBtn.alpha = 0.3;
     self.pauseBtn.alpha = 0.3;
     self.statusLabel.text = @"";
+    if (self.detailModel.name) {
+        self.titleLabel.text = self.detailModel.name;
+    }else {
     
+        self.titleLabel.text = @"开始第一个番茄";
+    }
     [UIView commitAnimations];
+    [TimerModel setCurrentTimerState:TimerStop];
+    [TimerModel setCurrentTimingIntervalType:WorkingTime];
     
 }
 
@@ -50,6 +60,7 @@
     [super viewWillAppear:animated];
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+    [StatisticModel resetcurrentPomodoro];
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
@@ -68,7 +79,6 @@
                                                    selector:@selector(timerTicked)
                                                    userInfo:nil
                                                     repeats:YES];
-
     
 }
 
@@ -99,6 +109,13 @@
         countDownValue = [[TimeManager sharedInstance]moveToTheNextIntervalType];
         //每次跳转都要更新label状态栏
         [self updateStatusLabel];
+        if ([[TimeManager sharedInstance]PomodoroCount] == [self.detailModel.pickerTime intValue]) {
+            [_generalTimer invalidate];
+            _generalTimer = nil;
+            //[self.navigationController popViewControllerAnimated:YES];
+            [self.delegate homeViewControllerDidDisspear:self];
+            
+        }
     }
     countDownValue--;
     //时间栏显示

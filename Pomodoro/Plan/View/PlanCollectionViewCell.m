@@ -33,6 +33,17 @@
 
     _nameModel = nameModel;
     if (nameModel != nil) {
+//        for(NSString *fontfamilyname in [UIFont familyNames])
+//        {
+//            NSLog(@"family:'%@'",fontfamilyname);
+//            for(NSString *fontName in [UIFont fontNamesForFamilyName:fontfamilyname])
+//            {
+//                NSLog(@"\tfont:'%@'",fontName);
+//            }
+//            NSLog(@"-------------");
+//        }
+        self.planCellLabel.font = [UIFont fontWithName:@"DFPOP1W5" size:15];
+        self.planCellLabel.textColor = [UIColor blueColor];
         self.planCellLabel.text = nameModel.name;
     }
 }

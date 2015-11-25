@@ -4,7 +4,7 @@
 //
 //  Created by Kerwin on 15/11/6.
 //  Copyright (c) 2015年 Kerwin. All rights reserved.
-//
+//  这里的项目名就是当前的待办事项
 
 #import "TargetViewController.h"
 #import "NameDetailViewController.h"
@@ -12,12 +12,14 @@
 
 #import "NameDetailModel.h"
 
+
 @interface TargetViewController (){
-    NSMutableArray *_itemlist;
+    
+    NSMutableArray *_itemlist;//_itemlist中存储的时NameDetailModel模型
     NSMutableArray *_resultlist;
     
     NSInteger _itemIndex;
-    //NSInteger _resultIndex;
+    
 }
 
 //@property (nonatomic, strong)HomeViewController *HVController;
@@ -29,8 +31,16 @@
     [super viewDidLoad];
     //self.title = @"小目标";
     self.navigationItem.title = @"小目标";
+    _itemlist = [NSKeyedUnarchiver unarchiveObjectWithFile:[self dateFilePath]];
+
     
    
+}
+
+#pragma mark - 存储地址
+- (NSString *)dateFilePath {
+    NSString *path = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)firstObject] stringByAppendingPathComponent:@"target.archiver"];
+    return path;
 }
 
 #pragma mark - UITableViewDataSource
@@ -63,8 +73,8 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     //从数据模型中删除
     [_itemlist removeObjectAtIndex:indexPath.row];
-//    NSString *path = [self dataFilePath];
-//    [NSKeyedArchiver archiveRootObject:_itemlist toFile:path];
+
+    [NSKeyedArchiver archiveRootObject:_itemlist toFile:[self dateFilePath]];
     //从表视图中删除
     NSArray *indexPaths = @[indexPath];
     [tableView deleteRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
@@ -83,9 +93,6 @@
     
     
 }
-
-
-
 
 #pragma mark - search
 
@@ -108,6 +115,8 @@
     }
     [_itemlist addObject:nameDetail];
     [self.tableView reloadData];
+
+    [NSKeyedArchiver archiveRootObject:_itemlist toFile:[self dateFilePath]];
     
 }
 
@@ -117,6 +126,8 @@
     [_itemlist insertObject:listData atIndex:_itemIndex];
     
     [self.tableView reloadData];
+    [NSKeyedArchiver archiveRootObject:_itemlist toFile:[self dateFilePath]];
+
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
