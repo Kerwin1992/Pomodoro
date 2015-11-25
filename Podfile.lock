@@ -1,0 +1,10 @@
+PODS:
+  - RESideMenu-onlyLeft (4.0.7)
+
+DEPENDENCIES:
+  - RESideMenu-onlyLeft (~> 4.0.7)
+
+SPEC CHECKSUMS:
+  RESideMenu-onlyLeft: d4e4010a5dce24e3e5e29bfa914db4bd7191c83e
+
+COCOAPODS: 0.39.0

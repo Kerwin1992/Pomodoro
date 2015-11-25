@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4E13BEBD-6FEC-4B5F-AE6B-C7ECD07462C9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Pomodoro</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7D0E7E04DCE208562C1CCD04874E56C352A5CCFB</key>
+		<string>https://github.com/Kerwin1992/Pomodoro.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Pomodoro.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7D0E7E04DCE208562C1CCD04874E56C352A5CCFB</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Kerwin1992/Pomodoro.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7D0E7E04DCE208562C1CCD04874E56C352A5CCFB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7D0E7E04DCE208562C1CCD04874E56C352A5CCFB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Pomodoro</string>
+		</dict>
+	</array>
+</dict>
+</plist>
